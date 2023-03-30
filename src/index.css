@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    /*Header*/
+    .any-text {
+        @apply text-gray-100 font-bold tracking-wider;
+    }
+
+}
+
+
+/*Background Image*/
+@layer components {
+    body {
+        overflow-x: hidden;
+        font-family: 'Inter', sans-serif;
+    }
+    .background-canvas {
+        background-image: url('./Background/web-background.jpg');
+        background-size: cover;
+        z-index: -1;
+    }
+
+
+        /*Scroll-Bar*/
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgb(1, 24, 32);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #555;
+        
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #888;
+    }
+}
+
+
