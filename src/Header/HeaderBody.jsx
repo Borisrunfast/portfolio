@@ -3,7 +3,7 @@ function HeaderBody() {
 
 
     return ( 
-        <div className='w-11/12 h-4/6 m-auto flex items-center'>
+        <div className='w-10/12 h-4/6 m-auto flex items-center'>
             <div className='w-4/6 h-auto'>
                 
                 <h1 className="text-5xl" data-text='WELCOME TO MY WEBSITE'>
