@@ -3,27 +3,122 @@
 @tailwind utilities;
 
 
+
+
+
 @layer components {
-    /*Header*/
+    /*Any*/
     .any-text {
         @apply text-gray-100 font-bold tracking-wider;
     }
 
-}
+    .nav-img {
+        @apply  w-16 max-sm:w-10 max-lg:w-14;
+    }
+    
+    .div-decor {
+        padding: 2em;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(0, 195, 255);
+        border-top: none;
+        border-radius: 25px;
+        box-shadow: 0 5px 20px rgb(0, 195, 255);
+    }
+
+    .button-decor {
+        font-size: 1.125rem;
+        padding: .5em 2em;
+        background-image: linear-gradient(90deg, rgb(0, 195, 255), rgb(0, 119, 255));
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgb(0, 195, 255);
+    }
+
+    /*Navigation*/
+    .nav-decor a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-decor a:hover {
+        color: rgb(0, 195, 255);
+        text-shadow: 0px 0px 10px rgb(0, 195, 255);
+        filter:brightness(3);
+    }
+
+    .button-decor:hover {
+        background-image: linear-gradient(90deg, rgb(0, 195, 255), rgb(0, 195, 255));
+    }
+    /*Header*/
+
+    .header-img {
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        width: 450px;
+        height: 450px;
+        opacity: .9;
+        box-shadow: 0px 0px 30px whitesmoke;
+        filter: grayscale(1);
+    }
+
+    /*Text Header*/
+
+    .header-animation span{
+        position: relative;
+        display: inline-block;
+        color: rgba(239, 233, 231, 0.1);
+        -webkit-text-stroke: 1px rgb(0, 195, 255);
+    }
+
+    .header-animation span::before {
+        content: attr(data-text);
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        color: rgb(0, 195, 255);
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    .header-animation span:hover::before{
+        height: 100%;
+        text-shadow: 0 0 10px rgb(0, 195, 255);
+    }
+
+    /*Form*/
+    .form-decor input, textarea {
+        font-size: 1.25rem;
+        margin-bottom: 1em;
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: 1px solid gray;
+    }
+
+    .form-decor textarea {
+        resize: none;
+
+    }
 
 
 /*Background Image*/
-@layer components {
+
     body {
         overflow-x: hidden;
         font-family: 'Inter', sans-serif;
+        background-color: black;
     }
     .background-canvas {
         background-image: url('./Background/web-background.jpg');
         background-size: cover;
         z-index: -1;
     }
-
+    h2 {
+        @apply text-3xl text-center   max-sm:text-xl;
+    }
 
         /*Scroll-Bar*/
 
@@ -49,6 +144,10 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #888;
     }
+
+    /*Media*/
+
+
 }
 
 
