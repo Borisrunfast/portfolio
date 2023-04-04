@@ -3,6 +3,7 @@ import Header from './Header/Header'
 import About from './About/About'
 import Projects from './Projects/Projects'
 import EmailMe from './EmailMe/EmailMe'
+import Footer from './Footer/Footer'
 
 function App() {
     return ( 
@@ -12,6 +13,7 @@ function App() {
             <About />
             <Projects />
             <EmailMe />
+            <Footer />
             <Canvas />
         </div> 
     )

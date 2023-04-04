@@ -15,7 +15,7 @@ function Projects() {
         i += holdObj.length - 1
         html.push(
         <img 
-            className='w-4/12 object-cover object-top aspect-video'
+            className='w-4/12 inline-block object-cover object-top aspect-video cursor-pointer'
             key={i} 
             src={holdObj[0].url} 
             alt={holdObj[0].name} 
@@ -50,7 +50,7 @@ function Projects() {
 
                 <div className='w-auto h-64 mb-8 flex overflow-hidden'>
                     <button className='text-8xl w-12 h-full    max-lg:hidden' onClick={slideLeft}>&#8249;</button>
-                    <div id='slider' className='w-full flex justify-center overflow-hidden scroll-smooth    max-lg:flex-wrap'>
+                    <div id='slider' className='flex w-fit overflow-hidden scroll-smooth    max-lg:flex-wrap max-lg:justify-center'>
                         {html}
                     </div>
                     <button className='text-8xl w-12 h-full    max-lg:hidden' onClick={slideRight}>&#8250;</button>

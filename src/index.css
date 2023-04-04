@@ -13,7 +13,7 @@
     }
 
     .nav-img {
-        @apply  w-16 max-sm:w-10 max-lg:w-14;
+        @apply  w-10 max-sm:w-10 max-lg:w-14;
     }
     
     .div-decor {
