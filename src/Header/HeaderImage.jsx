@@ -13,7 +13,6 @@ switch (imageId) {
     case 2: show[2] = ''
 }
 
-console.log(show)
     return (
         <>
             <img src={images[0].url} alt={images[0].alt} className={'header-img absolute    max-sm:w-[200px] max-sm:h-[200px]    max-lg:w-[350px] max-lg:h-[350px]' + show[0]}/>
