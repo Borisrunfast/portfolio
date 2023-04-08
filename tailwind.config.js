@@ -6,7 +6,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    duration: {
+        animationDuration: "1s"
+    },
+    extend: {
+      
+    },
   },
   plugins: [],
 }

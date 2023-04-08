@@ -1,11 +1,13 @@
 import Skills from "./Skills"
+import useAnimation from "../hooks/useAnimation"
 
 function About() {
+    const [ref, animate] = useAnimation()
 
     return (
-        <div className="w-screen min-h-screen flex justify-center items-center">
-            <div className="div-decor w-11/12 flex    max-lg:flex-col">
-                <div className="w-2/4 h-auto pb-8    max-lg:w-fit">
+        <div ref={ref} className="mb-8 w-screen min-h-screen flex justify-center items-center">
+            <div className={"div-decor w-11/12 flex    max-lg:flex-col" + animate} style={{animationDuration: '2s'}}>
+                <div className={"w-2/4 h-auto pb-8    max-lg:w-fit" + animate} style={{animationDuration: '2.25s'}}>
 
 
                     <h2 className="mb-8   max-sm:mb-2">ABOUT ME</h2>
@@ -22,7 +24,7 @@ function About() {
 
 
                 </div>
-                <div className="w-2/4 h-auto    max-lg:w-fit">
+                <div className={"w-2/4 h-auto    max-lg:w-fit" + animate} style={{animationDuration: '2.5s'}}>
 
 
                     <h2>SKILLS</h2>

@@ -1,11 +1,13 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import useAnimation from '../hooks/useAnimation'
 
 
 function EmailMe() {
     // Send Form
     const [formData, setFormData] = useState(JSON.parse(window.localStorage.getItem('formData')) || {user_name: '', user_email: '', user_subject: '', message: ''})
-    const form = useRef();
+    const form = useRef()
+    const [ref, animate] = useAnimation()
 
     function updateForm(event) {
         setFormData({...formData, [event.target.name]: event.target.value})
@@ -29,9 +31,8 @@ function EmailMe() {
     }
 
 
-
     return (
-        <div className='w-screen h-screen flex flex-col justify-center items-center'>
+        <div ref={ref} className={'w-screen h-screen flex flex-col justify-center items-center' + animate} style={{animationDuration: '2s'}}>
             <div className='div-decor w-7/12 h-fit flex flex-col    max-lg:w-11/12'>
                 <h2 className='pb-8'>CONTACT ME</h2>
                 <form className='form-decor flex flex-col' ref={form} onSubmit={sendEmail}>

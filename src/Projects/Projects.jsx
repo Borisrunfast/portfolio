@@ -1,12 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import Project from './Project'
+import useAnimation from "../hooks/useAnimation"
 
 import projectData from './projectData'
 
 function Projects() {
     const [displayData, setDisplayData] = useState([projectData[0], projectData[1]])
     const html = []
-
+    const [ref, animate] = useAnimation()
 
     for (let i = 0; i < projectData.length; i++) {
         const holdObj = projectData.filter(item => {
@@ -43,9 +44,9 @@ function Projects() {
 
 
     return (
-        <div id='projects' className='w-screen min-h-screen flex flex-col justify-center items-center    max-sm:mt-16' >
+        <div ref={ref} id='projects' className='mb-8 w-screen min-h-screen flex flex-col justify-center items-center    max-sm:mt-16' >
             
-            <div className='div-decor w-11/12 h-fit'>
+            <div className={'div-decor w-11/12 h-fit' + animate} style={{animationDuration: '2s'}}>
                 <h2 className='pb-8'>PROJECTS</h2>
 
                 <div className='w-auto h-64 mb-8 flex overflow-hidden'>

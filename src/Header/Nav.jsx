@@ -4,7 +4,7 @@ function Nav() {
 
     return (
 
-        <ul className='nav-decor flex gap-8'>
+        <ul className='nav-decor flex gap-8 animate'  style={{animationDuration: '1.5s'}}>
             <li>
                 <a href="https://github.com/Borisrunfast?tab=overview&from=2023-02-01&to=2023-02-28" target="_blank" rel="noreferrer">
                     <img className='nav-img' src='/HeaderImg/gitHub-logo.png' target="_blank" alt="github" />
