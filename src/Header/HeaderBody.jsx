@@ -17,7 +17,7 @@ function HeaderBody() {
                 </h2>
             </div>
 
-            <div className='w-2/6 h-auto flex justify-center items-center    max-lg:w-fit max-lg:h-2/4'>
+            <div className='w-2/6 h-auto flex justify-center items-center animate   max-lg:w-fit max-lg:h-2/4' style={{animationDuration: '2.75s'}}>
                 <HeaderImage imageId={imageId}/>
             </div>
         </div>

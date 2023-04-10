@@ -1,6 +1,6 @@
 function Skills() {
-    const imgArr = ['/images_skill/html-logo.png', '/images_skill/css-logo.png', '/images_skill/JavaScript-logo.png', '/images_skill/react-logo.png']
-    const descArr = ['HTML5', 'CSS3', 'JavaScript', 'React']
+    const imgArr = ['/images_skill/html-logo.png', '/images_skill/css-logo.png', '/images_skill/tailwind-logo.jpg', '/images_skill/JavaScript-logo.png', '/images_skill/react-logo.png', '/images_skill/git-logo.png']
+    const descArr = ['HTML5', 'CSS3', 'TailwindCSS', 'JavaScript', 'ReactJS', 'Git']
 
     const imgHtml = imgArr.map((img, i) => {
         return (

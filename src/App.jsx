@@ -7,7 +7,7 @@ import Footer from './Footer/Footer'
 
 function App() {
     return ( 
-        <div className='any-text h-fit w-fit scroll-smooth overflow-hidden'>
+        <div className='any-text h-fit w-fit scroll-smooth overflow-hidden animate-fadein' style={{animationDuration: '1s'}}>
             
             <Header />
             <About />

@@ -28,7 +28,7 @@ function About() {
 
 
                     <h2>SKILLS</h2>
-                    <div className="w-full h-5/6 grid grid-cols-2 grid-rows-2 items-center justify-center">
+                    <div className="w-full h-5/6 grid grid-cols-3 grid-rows-2 items-center justify-center">
                         <Skills />
                     </div>
 

@@ -18,7 +18,7 @@ function Nav() {
                 </a>
             </li>
             <li>
-                <a href="#home" rel="noreferrer" target="_blank">
+                <a href="/Borisas Guzitajevas Resume.pdf" target="_blank" rel="noreferrer">
                     <img className='nav-img' src='/HeaderImg/resume-logo.png' target="_blank" alt='resume'/>
                     Resume
                 </a>

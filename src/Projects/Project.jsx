@@ -27,7 +27,7 @@ function Project({displayData}) {
                 </div>
                 <div className='w-2/4    max-lg:w-full'>
                 <p className='mb-8 font-normal    max-sm:text-sm     max-lg:text-lg'>{displayData[0].description}</p>
-                <button className='button-decor    max-lg:float-right'>GitHub</button>
+                <a href={displayData[0].github} target='_blank' className='button-decor    max-lg:float-right'>GitHub</a>
 
                 </div>
             </div>
