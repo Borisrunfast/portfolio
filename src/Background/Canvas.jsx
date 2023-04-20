@@ -82,7 +82,7 @@ function Canvas() {
         }
       }
     
-
+      
     // adds or removes X Bacground Stars into an array depending on screen width.
 
     if (starsArr.length < starAmount) {
