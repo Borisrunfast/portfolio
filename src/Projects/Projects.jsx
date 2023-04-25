@@ -16,7 +16,7 @@ function Projects() {
         i += holdObj.length - 1
         html.push(
         <img 
-            className='w-4/12 inline-block object-cover object-top aspect-video cursor-pointer'
+            className='w-4/12 inline-block object-cover object-top aspect-video cursor-pointer opacity-70 hover:opacity-100'
             key={i} 
             src={holdObj[0].url} 
             alt={holdObj[0].name} 
