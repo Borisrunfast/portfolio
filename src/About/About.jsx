@@ -16,9 +16,11 @@ function About() {
                         <br/>
                         <p>I am most used to working with JavaScript and React, but am very keen on taking new challenges.</p>
                         <br/>
-                        <p>I am very open to learn new applications involving programming. Currently I am working on improving my UI/UX skills, 
-                        improving my programming skills by learning different data structures and algorithms. 
-                        When I am not programming, I tend to hang out with my family/friends, play my guitar or play video games.
+                        <p>I am eager to learn new programming applications and expand my skill set. At the moment, I am focused on mastering Node.js, 
+                            with the aim of becoming a more versatile front-end developer. 
+                            To further enhance my programming abilities, I am also studying various data structures and algorithms.
+
+                            When I am not coding, I enjoy spending time with my loved ones, playing my guitar, or indulging in some video games.
                         </p>
                     </div>
 
