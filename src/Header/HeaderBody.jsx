@@ -13,7 +13,7 @@ function HeaderBody() {
                 </h1>
                 
                 <h2 className="text-3xl w-10/12 text-left animate    max-sm:text-sm max-lg:text-center max-lg:m-auto     max-lg:text-2xl"  style={{animationDuration: '2.5s'}}>
-                    MY NAME IS <span onMouseEnter={() => setImageId(1)} className='' data-text='BORIS'>BORIS</span> AND I AM A 20 YEAR OLD <span onMouseEnter={() => setImageId(2)} className='whitespace-nowrap' data-text='WEB-DEVELOPER'>WEB-DEVELOPER</span>
+                    MY NAME IS <span onMouseEnter={() => setImageId(1)} className='' data-text='BORIS'>BORIS</span> AND I AM A 21 YEAR OLD <span onMouseEnter={() => setImageId(2)} className='whitespace-nowrap' data-text='WEB-DEVELOPER'>WEB-DEVELOPER</span>
                 </h2>
             </div>
 
